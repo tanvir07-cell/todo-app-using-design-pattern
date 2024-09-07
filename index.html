@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Masters</title>
+    <script src="app.js" defer type="module"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- indexdb -->
+    <script src="https://cdn.jsdelivr.net/npm/idb@8/build/umd.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container silver-mesh glass">
+      <h1>
+        ToDo
+        <span class="material-symbols-outlined"> new_label </span>
+      </h1>
+      <input type="text" id="todo-input" placeholder="Add a new task" />
+
+      <button id="undo-btn" class="btn-candy-mesh glass">Undo</button>
+      <button id="add-btn" class="btn-candy-mesh glass">Add</button>
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <button id="start-button" class="btn-candy-mesh glass">
+        add / remove using voice
+      </button>
+    </div>
+  </body>
+</html>
